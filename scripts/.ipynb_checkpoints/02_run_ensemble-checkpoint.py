@@ -11,8 +11,8 @@ import shutil
 import sys
 
 # Define the inputs
-forcings_directory = '../official_easymore'  # directory containing results from easymore
-model_directory = '../model_v10_1'  # directory containing HYPE model files
+forcings_directory = '../../official_easymore'  # directory containing results from easymore
+model_directory = '../../model_v10_3'  # directory containing HYPE model files
 hype_executable = './hype'  # command line argument to run HYPE
 runs_per_script = 1
 file_pattern = "*.nc"
@@ -234,8 +234,9 @@ for directory in directory_subset:
         # Get a list of all files in the working directory
         files = os.listdir(working_directory)
         
-        # Find the name of any text file starting with "00"
-        matching_files = [file for file in files if file.startswith("00") and file.endswith(".txt")]
+        # Find the name of any text file starting with "00" and "time" for both kinds of outputs
+        matching_files = [file for file in files if (file.startswith("time") or file.startswith("00")) and file.endswith(".txt")]
+
 
         # Rename each file by adding the directory name as a prefix
         for file in matching_files:
