@@ -32,7 +32,7 @@ run_number = int(sys.argv[1])
 print(f'Run number= {run_number}')
 
 # debug
-#run_number = 22
+run_number = 27
 
 # Get a list of each directory in the specified directory
 directory_list = sorted([d for d in os.listdir(forcings_directory) if os.path.isdir(os.path.join(forcings_directory, d))])

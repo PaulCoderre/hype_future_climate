@@ -11,9 +11,9 @@ import shutil
 import sys
 
 # Define the inputs
-directory_path = '../official_easymore/09_easymore_cmip_outs_NCC_NorESM2-LM_ssp370/'  # directory specific required results
-output_directory= './09_easymore_cmip_outs_NCC_NorESM2-LM_ssp370'
-model_directory = '../model_v10_1/'  # directory containing HYPE model files
+directory_path = '../../official_easymore/09_easymore_cmip_outs_NCC_NorESM2-LM_ssp370/'  # directory specific required results
+output_directory= '../../hype_paper_run/'
+model_directory = '../../model_hype-s/'  # directory containing HYPE model files
 hype_executable = './hype'  # command line argument to run HYPE
 file_pattern = "*.nc"
 

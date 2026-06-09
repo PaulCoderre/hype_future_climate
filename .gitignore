@@ -1,2 +1,5 @@
 scripts/slurm_logs/
 scripts/directories.txt
+scripts/bc_plots/
+scripts/outputs/
+scripts/timeseries_plots/

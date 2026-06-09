@@ -6,8 +6,9 @@
 #SBATCH --job-name=scenarios
 #SBATCH --error=slurm_logs/slurm_%j.err
 #SBATCH --output=slurm_logs/slurm_%j.out
-#SBATCH --array=1-30
+#SBATCH --array=1-2
 
+# array = 1-30 
 # Add the directory where the modules are located to the MODULEPATH
 . /work/comphyd_lab/local/modules/spack/2024v5/lmod-init-bash
 module unuse $MODULEPATH

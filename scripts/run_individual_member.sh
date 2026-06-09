@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
-#SBATCH --time=0-3:00:00
+#SBATCH --cpus-per-task=20
+#SBATCH --time=0-1:10:00
 #SBATCH --mem=96G
 #SBATCH --job-name=scenarios
 #SBATCH --error=slurm_logs/slurm_%j.err
